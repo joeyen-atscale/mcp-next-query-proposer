@@ -1,0 +1,23 @@
+[package]
+name = "mcp-next-query-proposer"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70.0"
+description = "Propose analytically valuable follow-up MQOs from session context"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/joeyen-atscale/mcp-next-query-proposer"
+keywords = ["semantic-layer", "olap", "mcp", "query", "proposer"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "mcp_next_query_proposer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mcp-next-query-proposer"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+clap = { version = "4", features = ["derive"] }

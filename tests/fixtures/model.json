@@ -1,0 +1,36 @@
+{
+  "measures": [
+    {"unique_name": "sales.revenue", "label": "Revenue"},
+    {"unique_name": "sales.units", "label": "Units Sold"},
+    {"unique_name": "sales.margin_pct", "label": "Margin %"}
+  ],
+  "hierarchies": [
+    {
+      "unique_name": "geo.store",
+      "is_time": false,
+      "levels": [
+        {"unique_name": "geo.store.Store Region", "name": "Store Region", "depth": 1},
+        {"unique_name": "geo.store.Store State",  "name": "Store State",  "depth": 2},
+        {"unique_name": "geo.store.Store City",   "name": "Store City",   "depth": 3}
+      ]
+    },
+    {
+      "unique_name": "time.calendar",
+      "is_time": true,
+      "levels": [
+        {"unique_name": "time.calendar.Year",    "name": "Year",    "depth": 1},
+        {"unique_name": "time.calendar.Quarter", "name": "Quarter", "depth": 2},
+        {"unique_name": "time.calendar.Month",   "name": "Month",   "depth": 3}
+      ]
+    },
+    {
+      "unique_name": "product.category",
+      "is_time": false,
+      "levels": [
+        {"unique_name": "product.category.Category",    "name": "Category",    "depth": 1},
+        {"unique_name": "product.category.Subcategory", "name": "Subcategory", "depth": 2},
+        {"unique_name": "product.category.Product",     "name": "Product",     "depth": 3}
+      ]
+    }
+  ]
+}

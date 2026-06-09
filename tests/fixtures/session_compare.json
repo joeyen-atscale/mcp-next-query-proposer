@@ -1,0 +1,18 @@
+{
+  "session_id": "sess-compare-001",
+  "mqo_history": [
+    {
+      "mqo": {
+        "model": "sales",
+        "measures": [{"unique_name": "sales.revenue"}],
+        "dimensions": [{"hierarchy": "product.category", "level": "Category"}],
+        "filters": [],
+        "time_intelligence": []
+      }
+    }
+  ],
+  "touched_entities": [
+    "sales.revenue",
+    "product.category.Category"
+  ]
+}

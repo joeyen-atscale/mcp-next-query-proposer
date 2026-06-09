@@ -1,0 +1,28 @@
+{
+  "session_id": "sess-exhausted-001",
+  "mqo_history": [
+    {
+      "mqo": {
+        "model": "sales",
+        "measures": [{"unique_name": "sales.revenue"}],
+        "dimensions": [{"hierarchy": "geo.store", "level": "Store Region"}],
+        "filters": [],
+        "time_intelligence": [{"op": "prior_period"}]
+      }
+    }
+  ],
+  "touched_entities": [
+    "sales.revenue",
+    "sales.units",
+    "sales.margin_pct",
+    "geo.store.Store Region",
+    "geo.store.Store State",
+    "geo.store.Store City",
+    "time.calendar.Year",
+    "time.calendar.Quarter",
+    "time.calendar.Month",
+    "product.category.Category",
+    "product.category.Subcategory",
+    "product.category.Product"
+  ]
+}

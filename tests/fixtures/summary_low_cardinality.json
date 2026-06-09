@@ -1,0 +1,28 @@
+{
+  "row_count": 4,
+  "columns": [
+    {"name": "Category", "unique_name": "product.category.Category", "dtype": "Str", "nullable": false, "role": "Dimension"},
+    {"name": "Revenue",  "unique_name": "sales.revenue",             "dtype": "Float", "nullable": false, "role": "Measure"}
+  ],
+  "sample": [],
+  "sample_cap": 20,
+  "stats": {
+    "product.category.Category": {
+      "min": null,
+      "max": null,
+      "sum": null,
+      "mean": null,
+      "distinct": 4,
+      "top_k": null
+    },
+    "sales.revenue": {
+      "min": 1000.0,
+      "max": 50000.0,
+      "sum": 200000.0,
+      "mean": 50000.0,
+      "distinct": null,
+      "top_k": null
+    }
+  },
+  "notes": []
+}

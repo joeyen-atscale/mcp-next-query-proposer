@@ -1,0 +1,21 @@
+{
+  "session_id": "sess-pivot-001",
+  "mqo_history": [
+    {
+      "mqo": {
+        "model": "sales",
+        "measures": [{"unique_name": "sales.revenue"}],
+        "dimensions": [{"hierarchy": "geo.store", "level": "Store Region"}],
+        "filters": [],
+        "time_intelligence": [{"op": "prior_period"}]
+      }
+    }
+  ],
+  "touched_entities": [
+    "sales.revenue",
+    "geo.store.Store Region",
+    "time.calendar.Year",
+    "time.calendar.Quarter",
+    "time.calendar.Month"
+  ]
+}
